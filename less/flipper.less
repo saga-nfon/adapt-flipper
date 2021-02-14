@@ -63,19 +63,20 @@
 
 		.flipper-item-body {
 			background: @font-color-inverted;
-			padding: 20px 20px 50px;
+			padding: 20px 20px 20px;
 			color: @font-color;
 		}
-
 		.flipper-item-img {
-			vertical-align: bottom;
+			padding-top: 20px;
+			max-height: 60vh;
+			min-width: auto;
+			display:block;
+			margin:auto;
 		}
 
 		.flipper-item-instruction {
-			position: absolute;
-			margin: 20px;
-			bottom: 0;
-			right: 0;
+			text-align: right;
+			margin: 10px 20px 10px 20px;
 			color: @blue;
 		}
 
@@ -99,4 +100,9 @@
 	-ms-transform: rotateY(@angle);
 	-o-transform: rotateY(@angle);
 	transform: rotateY(@angle);
+}
+.flipper-item{
+    max-height: 70vh;
+    overflow-y: scroll;
+	overflow-x: hidden;
 }

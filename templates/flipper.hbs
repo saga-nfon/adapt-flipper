@@ -8,7 +8,9 @@
 						{{#if title}}<div class="flipper-item-title">{{{a11y_text title}}}</div>{{/if}}
 						{{#if body}}<div class="flipper-item-body">{{{a11y_text body}}}</div>{{/if}}
 						{{#if _graphic}}
-							{{#if _graphic.src}}<img class="flipper-item-img" src="{{_graphic.src}}" alt="{{_graphic.alt}}">{{/if}}
+						<div class="flipper-item-img-container">
+						{{#if _graphic.src}}<img class="flipper-item-img" src="{{_graphic.src}}" alt="{{_graphic.alt}}">{{/if}}
+						</div>
 						{{/if}}
 						{{#if instruction}}<div class="flipper-item-instruction">{{{a11y_text instruction}}}</div>{{/if}}
 					</div>
